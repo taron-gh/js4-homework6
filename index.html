@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6 - Messenger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="top-form">
+        <fieldset>
+            <input type="radio" name="select-user" value="me" id="radio2" />
+            <label for="radio2">Me</label>
+        </fieldset>
+        <fieldset>
+            <input type="radio" name="select-user" value="friend" id="radio1" />
+            <label for="radio1">Friend</label>
+        </fieldset>
+
+    </form>
+    <div class="chat-container">
+
+        <div class="top-bar">
+            <img class="icon" src="images/icon.jpg" alt="icon">
+            <span>Your Friend</span>
+        </div>
+
+        <div class="messeges-container">
+            <!-- appending here -->
+            <div class="messege">
+                <p>
+                    Sample message. <span>00:00</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <form>
+                <input type="text" name="messege">
+                <input type="button" name="send" value="Send">
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
