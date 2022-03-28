@@ -1,1 +1,1 @@
-# js4-homewrok6
+# js4-homework6
