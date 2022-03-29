@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <form id="top-form">
+    <form name="topForm" id="top-form">
         <fieldset>
-            <input type="radio" name="select-user" value="me" id="radio2" />
-            <label for="radio2">Me</label>
+            <input type="radio" name="select-user" value="true" id="radio1" checked/>
+            <label for="radio1">Me</label>
         </fieldset>
         <fieldset>
-            <input type="radio" name="select-user" value="friend" id="radio1" />
-            <label for="radio1">Friend</label>
+            <input type="radio" name="select-user" value="false" id="radio2" />
+            <label for="radio2">Friend</label>
         </fieldset>
 
     </form>
@@ -27,25 +27,24 @@
             <img class="icon" src="images/icon.jpg" alt="icon">
             <span>Your Friend</span>
         </div>
+        <hr>
 
         <div class="messeges-container">
             <!-- appending here -->
-            <div class="messege">
-                <p>
-                    Sample message. <span>00:00</span>
-                </p>
-            </div>
         </div>
-
         <div class="bottom-bar">
-            <form>
-                <input type="text" name="messege">
+            <form name = "messegeForm" class="messege-form" autocomplete="off">
+                <input type="text" name="messege" placeholder="Aa">
                 <input type="button" name="send" value="Send">
             </form>
         </div>
     </div>
 
-
+    <div class="hide for-clone">
+        <p>
+            Sample message. <span>00:00</span>
+        </p>
+    </div>
     <script src="script.js"></script>
 </body>
 
