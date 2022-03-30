@@ -47,6 +47,7 @@ messegeForm.messege.addEventListener("keydown", function (e) {
         const minutes = (new Date()).getMinutes() > 9 ? (new Date()).getMinutes() : "0" + (new Date()).getMinutes();
         newMessegeDiv.children[0].innerHTML = e.target.value + " <span>" + hours + ":" + minutes + "</span>"
         messegeContainer.append(newMessegeDiv)
+        messegeContainer.scrollTop = messegeContainer.scrollHeight
         e.target.value = ""
     }
 })
@@ -66,6 +67,8 @@ function renderMesseges() {
         const minutes = currentDate.getMinutes() > 9 ? currentDate.getMinutes() : "0" + currentDate.getMinutes();
         newMessegeDiv.children[0].innerHTML = item.text + " <span>" + hours + ":" + minutes + "</span>"
         messegeContainer.append(newMessegeDiv);
+        messegeContainer.scrollTop = messegeContainer.scrollHeight
+
     })
 }
 
